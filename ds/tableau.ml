@@ -2,7 +2,8 @@
 let swap t i j =
     let tmp = t.(i) in
     t.(i) <- t.(j);
-    t.(j) <- tmp;;
+    t.(j) <- tmp;
+    t;;
 
 
 (* calculer la somme des éléments d'un tableau *)
