@@ -18,14 +18,14 @@ let moyenne l = (float_of_int (somme l)) /. (float_of_int (taille l));;
 let rec minimum l = match l with
     | [] -> max_int  (* par convention, le min d'un ensemble vide est +infini *)
                      (* c'est pratique pour que n'importe quelle valeur remplace +infini *)
-    | e::q -> min e (minimum l);;  (* en utilisant la fonction min *)
+    | e::q -> min e (minimum q);;  (* en utilisant la fonction min *)
 
 
 (*renvoyer le maximum*)  
 let rec maximum l = match l with
     | [] -> min_int  (* par convention, le max d'un ensemble vide est -infini *)
                      (* c'est pratique pour que n'importe quelle valeur remplace -infini *)
-    | e::q -> max e (maximum l);;  (* en utilisant la fonction max *)
+    | e::q -> max e (maximum q);;  (* en utilisant la fonction max *)
            
         
 (*couper une liste en 2*)
