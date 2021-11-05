@@ -11,7 +11,7 @@ let rec somme l = match l with
 
 
 (*calculer la moyenne des éléments d'une liste*)
-let moyenne l = (somme l) /. (float_of_int (taille l));;
+let moyenne l = (float_of_int (somme l)) /. (float_of_int (taille l));;
   
   
 (*renvoyer le minimum*)  
