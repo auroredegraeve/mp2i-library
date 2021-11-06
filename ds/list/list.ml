@@ -46,3 +46,9 @@ let rec concat l1 l2 = match l1 with
 let rec rev acc l = match l with  (* acc va servir à construire le résultat (la liste à l'envers) *)
     | [] -> acc
     | e::q -> rev (e::acc) q;;
+
+
+(*doublon*)
+let rec doublon l = match l with
+    | [] -> false
+    | e::q -> List.mem e q || doublon q;;
