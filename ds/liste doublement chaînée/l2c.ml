@@ -42,4 +42,5 @@ let fusion l1 l2 =
     (l2.next).prev <- l1;
     let l1n = l1.next in
     l1.next <- l2.next;
-    l2.next <- l1n;;
+    l2.next <- l1n;
+    l1n;;
